@@ -1,5 +1,5 @@
 import { ArrowLeft } from "phosphor-react";
-import { Mail } from "../App";
+import { Mail } from "../graphql/generated/graphql";
 
 import { useInboxStore } from "../store";
 import { EmailPreview } from "./EmailPreview";

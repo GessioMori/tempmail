@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "codegen": "graphql-codegen-esm --config codegen.yaml"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.9",
     "@radix-ui/react-switch": "^1.0.1",
+    "graphql": "^16.6.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-countdown-circle-timer": "^3.1.0",
@@ -17,6 +20,10 @@
     "zustand": "^4.3.3"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^3.1.0",
+    "@graphql-codegen/client-preset": "^2.1.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@total-typescript/ts-reset": "^0.3.7",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",

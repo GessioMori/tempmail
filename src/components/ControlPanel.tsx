@@ -1,11 +1,11 @@
 import { CheckCircle, CopySimple } from "phosphor-react";
 import { useState } from "react";
 import { Countdown } from "./Countdown";
-import { NotificationButton } from "./NotificationsButton";
+import { NotificationsButton } from "./NotificationsButton";
 import { RefreshButton } from "./RefreshButton";
 
 interface ControlPanelProps {
-  address: string;
+  address: string | null;
   getEmailsFn: () => Promise<void>;
 }
 
@@ -16,7 +16,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
   const [wasCopied, setWasCopied] = useState(false);
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(address);
+    await navigator.clipboard.writeText(address || "");
     setWasCopied(true);
     setTimeout(() => {
       setWasCopied(false);
@@ -26,13 +26,15 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
   return (
     <section
       className="flex h-48 flex-shrink-0 flex-col items-center 
-    justify-around border-x-2 border-zinc-100 bg-white p-4 dark:border-zinc-700 dark:bg-neutral-800"
+    justify-around border-x-2 border-zinc-100 bg-white p-2 dark:border-zinc-700 dark:bg-neutral-800"
     >
       <div className="w-full max-w-lg ">
         <span className="text-sm font-light">Your temporary email address</span>
         <div className="flex items-stretch justify-between rounded-md border-2 border-zinc-100 dark:border-zinc-700">
           <div className="p-2">
-            <span className="break-all">{address}</span>
+            <span className="break-all">
+              {address || "Loading your email..."}
+            </span>
           </div>
           <button
             className="border-l-2 border-zinc-100 text-zinc-500  hover:bg-zinc-100 dark:border-zinc-700
@@ -50,7 +52,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
         <Countdown getEmailsFn={getEmailsFn} />
         <RefreshButton getEmailsFn={getEmailsFn} />
       </div>
-      <NotificationButton />
+      <NotificationsButton />
     </section>
   );
 };

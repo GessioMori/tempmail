@@ -1,4 +1,4 @@
-import { Mail } from "../App";
+import { Mail } from "../graphql/generated/graphql";
 import { useInboxStore, useEmailStore } from "../store";
 
 interface EmailPreviewProps {

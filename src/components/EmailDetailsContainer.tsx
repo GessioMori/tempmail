@@ -3,7 +3,7 @@ import { useInboxStore, useEmailStore } from "../store";
 
 export const EmailDetailsContainer = () => {
   const toggleInbox = useInboxStore((state) => state.toggleInbox);
-  const selectedMail = useEmailStore((state) => state.selectedEmail);
+  const selectedEmail = useEmailStore((state) => state.selectedEmail);
 
   return (
     <main
@@ -23,19 +23,25 @@ export const EmailDetailsContainer = () => {
           <ArrowRight size={24} />
         </button>
       </div>
-      {selectedMail ? (
+      {selectedEmail ? (
         <div className="flex flex-1 flex-col overflow-y-auto bg-[#f8f8f8] p-2 dark:bg-neutral-800">
           <h2 className="mb-1 ml-4 max-w-sm break-words text-2xl font-bold text-gray-800 dark:text-zinc-300">
-            {selectedMail.headerSubject}
+            {selectedEmail.headerSubject}
           </h2>
           <p className="mb-1 ml-4 max-w-sm break-words text-base font-light text-gray-800 dark:text-zinc-300">
-            {`<${selectedMail.fromAddr}>`}
+            {`<${selectedEmail.fromAddr}>`}
           </p>
           <div className="flex-1 rounded-md border-[2px] border-zinc-100 bg-white p-2">
-            <div
-              dangerouslySetInnerHTML={{ __html: selectedMail.html }}
-              className="overflow-x-auto text-zinc-700"
-            />
+            {selectedEmail.html ? (
+              <div
+                dangerouslySetInnerHTML={{ __html: selectedEmail.html }}
+                className="overflow-x-auto text-zinc-700"
+              />
+            ) : (
+              <div className="overflow-x-auto text-zinc-700">
+                {selectedEmail.text}
+              </div>
+            )}
           </div>
         </div>
       ) : (

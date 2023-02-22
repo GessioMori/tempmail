@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Mail } from "../App";
+import { Mail } from "../graphql/generated/graphql";
 
 interface InboxStore {
   isInboxActive: boolean;
