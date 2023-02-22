@@ -18,9 +18,9 @@ export const EmailPreview: React.FC<EmailPreviewProps> = ({ mail }) => {
         toggleInbox();
       }}
     >
-      <p className="truncate font-bold">{fromAddr}</p>
-      <p className="truncate font-bold text-[#1e83db]">{headerSubject}</p>
-      <p className="truncate text-zinc-500">{text}</p>
+      <p className="my-0 truncate font-bold">{fromAddr}</p>
+      <p className="my-0 truncate font-bold text-[#1e83db]">{headerSubject}</p>
+      <p className="my-0 truncate text-zinc-500">{text}</p>
     </li>
   );
 };
