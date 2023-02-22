@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen bg-zinc-100 text-zinc-700 dark:text-zinc-200;
+  }
+}
