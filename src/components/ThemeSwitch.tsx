@@ -14,6 +14,7 @@ export const ThemeSwitch = () => {
       cursor-pointer items-center rounded-full border-2 border-transparent 
       bg-zinc-400 transition-colors duration-200 ease-in-out"
       checked={theme === "dark"}
+      name="ThemeSwitch"
       onCheckedChange={() => {
         setTheme((current) => (current === "dark" ? "light" : "dark"));
         if (theme === "dark") {
@@ -32,9 +33,17 @@ export const ThemeSwitch = () => {
         data-[state=checked]:translate-x-[34px] dark:bg-zinc-800"
       />
       {theme === "dark" ? (
-        <img src={SunIcon} className="inline-block h-6 translate-x-[-14px]" />
+        <img
+          src={SunIcon}
+          alt="Sun icon"
+          className="inline-block h-6 translate-x-[-14px]"
+        />
       ) : (
-        <img src={MoonIcon} className="inline-block h-6 translate-x-[12px]" />
+        <img
+          src={MoonIcon}
+          alt="Moon icon"
+          className="inline-block h-6 translate-x-[12px]"
+        />
       )}
     </SwitchRadix.Root>
   );

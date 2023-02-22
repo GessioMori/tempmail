@@ -83,9 +83,7 @@ function App() {
     } else {
       getEmails({ variables: { id: localStorageData.localSessionId } }).then(
         (response) => {
-          if (response.error) {
-            setEmailAddress(() => "Error, please reload the page.");
-          } else if (!response.data?.session) {
+          if (response.error || !response.data?.session) {
             createSession();
           } else {
             const lastEmailId =

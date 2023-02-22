@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import RefreshIcon from "./../assets/refresh.svg";
 
 interface RefreshButtonProps {
@@ -22,7 +22,7 @@ export const RefreshButton: React.FC<RefreshButtonProps> = ({
         });
       }}
     >
-      <img src={RefreshIcon} className="h-4 w-4" />
+      <img src={RefreshIcon} alt="Refresh icon" className="h-4 w-4" />
       <span>{isRefreshing ? "Refreshing..." : "Refresh"}</span>
     </button>
   );

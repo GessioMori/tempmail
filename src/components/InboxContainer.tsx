@@ -40,15 +40,18 @@ export const InboxContainer: React.FC<InboxContainerProps> = ({ emails }) => {
         </button>
       </div>
       <div className="flex flex-1 flex-col gap-[2px] overflow-y-auto">
-        <ul className="flex flex-col gap-[2px] bg-zinc-100 dark:bg-zinc-700">
-          {emails.length > 0 ? (
-            emails.map((mail) => <EmailPreview mail={mail} key={mail.id} />)
-          ) : (
-            <h1 className="bg-white text-center text-zinc-500 dark:bg-neutral-800">
-              You don't have emails yet.
-            </h1>
-          )}
-        </ul>
+        {emails.length > 0 ? (
+          <ul className="flex flex-col gap-[2px] bg-zinc-100 dark:bg-zinc-700">
+            {emails.map((mail) => (
+              <EmailPreview mail={mail} key={mail.id} />
+            ))}
+          </ul>
+        ) : (
+          <h1 className="bg-white text-center text-zinc-500 dark:bg-neutral-800">
+            You don't have emails yet.
+          </h1>
+        )}
+
         <div className="flex-1 bg-white dark:bg-neutral-800"></div>
       </div>
     </aside>
