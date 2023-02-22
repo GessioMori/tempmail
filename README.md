@@ -21,3 +21,7 @@ This repository contains the source code for the TempMail app. It is built using
 - [ ] E2E tests with Vitest and React Testing Library;
 - [ ] Allow multiple email addresses;
 - [ ] Implement pagination
+
+## Lighthouse Report
+
+![Lighthouse report](./images/lighthouse.png)
