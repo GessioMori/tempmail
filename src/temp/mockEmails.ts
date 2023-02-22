@@ -1,0 +1,88 @@
+import { Mail } from "../App";
+
+export const emails: Mail[] = [
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "1",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "2",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "3",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "4",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "5",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "6",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "7",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "8",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "9",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "10",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "11",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+  {
+    fromAddr: "gessio@mail.com",
+    headerSubject: "headerSubject",
+    id: "12",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+    html: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus aspernatur molestias, nulla beatae necessitatibus ullam tenetur doloremque nesciunt praesentium, voluptatum ducimus debitis ipsum assumenda mollitia accusantium quaerat neque deserunt.",
+  },
+];
